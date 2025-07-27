@@ -1,0 +1,76 @@
+.formContainer {
+  padding: 20px 30px;
+}
+
+.formContainer h2 {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 5px;
+  color: rgb(136, 0, 23);
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  display: block;
+  font-weight: 550;
+  margin-bottom: 8px;
+}
+
+.input {
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid #ccc;
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.fileInput {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+}
+
+.fileInput::file-selector-button {
+  margin-right: 15px;
+  border: 1px solid #ccc;
+  background: #f0f0f0;
+  padding: 8px 12px;
+  border-radius: 5px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.fileInput::file-selector-button:hover {
+  background: #e0e0e0;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  background-color: rgb(99, 0, 17);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 550;
+  transition: background-color 0.3s, opacity 0.3s;
+}
+
+.submitButton:hover {
+  background-color: rgb(136, 0, 23);
+}
+
+.submitButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.7;
+}

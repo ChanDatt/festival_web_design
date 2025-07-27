@@ -1,0 +1,236 @@
+.slogan {
+  position: relative;
+}
+
+.headerSlogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 400px;
+  left: 0;
+  right: 0;
+  color: white;
+  font-weight: 550;
+  letter-spacing: 2px;
+}
+
+.centerSlogan {
+  font-size: 90px;
+  margin-bottom: 40px;
+  text-shadow: 0.5px 0.5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.balloonBackground {
+  position: absolute;
+  top: 120px;
+  right: 0;
+  z-index: -1;
+  width: 80%;
+  max-width: 800px;
+}
+.cloud {
+  width: 100vw;
+  position: absolute;
+  left: 0;
+}
+.mountain {
+  width: 100vw;
+  display: block;
+}
+
+/* --- Content Section --- */
+.content {
+  width: 85%;
+  margin: 0 auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.contentSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+.imgContent {
+  width: 57%;
+  border-radius: 15px 90px 15px 90px;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.4);
+}
+.paraContent {
+  line-height: 50px;
+}
+.paraContent h2 {
+  text-align: center;
+  font-size: 60px;
+  font-family: fantasy;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 90px;
+}
+.paraContent p {
+  text-align: justify;
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.content2,
+.content3 {
+  margin-top: 100px;
+}
+
+.content1,
+.content2,
+.content3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*content-1*/
+.content1 .paraContent p {
+  margin-left: 30px;
+  color: rgb(116, 22, 52);
+}
+
+.content1 .paraContent h2 {
+  margin-left: 20px;
+  color: rgb(252, 6, 84);
+}
+
+/*content-2*/
+.content2 .paraContent {
+  margin-top: 100px;
+}
+.content2 .paraContent p {
+  margin-right: 40px;
+  letter-spacing: 1.3px;
+  color: rgb(67, 5, 63);
+}
+
+.content2 .paraContent h2 {
+  margin-right: 25px;
+  color: rgb(133, 10, 125);
+}
+
+/*content-3*/
+.content3 .paraContent {
+  margin-top: 100px;
+}
+
+.content3 .paraContent p {
+  margin-left: 30px;
+  color: rgb(36, 14, 71);
+}
+
+.content3 .paraContent h2 {
+  margin-left: 20px;
+  color: rgb(113, 54, 209);
+}
+
+.sponsors {
+  margin-top: 150px;
+}
+.sponsors h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 30px;
+  font-weight: 900;
+}
+.logoSponsors {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 25px 0;
+}
+.imgSponsors {
+  margin: 0 35px;
+}
+.imgSponsors img {
+  width: 130px;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+
+/* --- Responsive --- */
+@media screen and (max-width: 739px) {
+  .headerSlogan {
+    letter-spacing: 0;
+    top: 160px;
+  }
+  .centerSlogan {
+    font-size: 33px;
+    margin-bottom: 0;
+  }
+  .contentSection {
+    flex-direction: column;
+  }
+  .contentSection.content1,
+  .contentSection.content3 {
+    flex-direction: column-reverse;
+  }
+  .content1 {
+    margin-top: 100px;
+  }
+  .paraContent {
+    margin: 10px 40px !important;
+  }
+  .imgContent {
+    width: 87%;
+    margin-top: 50px;
+    margin-bottom: 70px;
+  }
+  .paraContent h2 {
+    font-size: 53px;
+    line-height: 70px;
+  }
+  .paraContent p {
+    font-size: 20px;
+  }
+  .sponsors h2 {
+    font-size: 50px;
+    letter-spacing: 20px;
+  }
+  .logoSponsors {
+    display: block;
+    text-align: center;
+  }
+  .imgSponsors {
+    width: 48%;
+    display: inline-block;
+    margin: 20px 0;
+  }
+  .imgSponsors img {
+    width: 50%;
+  }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  .headerSlogan {
+    top: 240px;
+  }
+  .centerSlogan {
+    font-size: 70px;
+  }
+  .contentSection {
+    flex-direction: column;
+  }
+  .contentSection.content1,
+  .contentSection.content3 {
+    flex-direction: column-reverse;
+  }
+  .paraContent {
+    margin: 10px 40px !important;
+  }
+  .imgContent {
+    width: 87%;
+    margin-top: 50px;
+    margin-bottom: 70px;
+  }
+  .sponsors .imgSponsors img {
+    width: 60px;
+  }
+}

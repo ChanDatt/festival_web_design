@@ -1,0 +1,109 @@
+.pageContainer {
+  background: linear-gradient(
+    rgb(0, 28, 5) 0%,
+    rgb(0, 60, 11) 30%,
+    rgb(0, 181, 166) 70%,
+    rgb(0, 129, 241) 100%
+  );
+  font-family: "Courier New", Courier, monospace;
+  padding-bottom: 50px;
+}
+
+.titleContainer {
+  height: 500px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+h1 {
+  left: 88px;
+}
+
+.titleBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.titleContainer h1 {
+  font-size: 75px;
+  letter-spacing: 5px;
+  color: white;
+  font-weight: 600;
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+  position: relative;
+  z-index: 1;
+}
+
+.sendPhoto {
+  margin: 100px auto;
+  padding: 0 20px;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.sendPhotoImage img {
+  max-width: 1700px;
+  width: 100%;
+}
+
+.sendPhotoParagraph {
+  font-size: 30px;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  color: white;
+}
+
+.sendPhotoParagraph button {
+  border: none;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  margin-top: 30px;
+  font-size: 25px;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.sendPhotoParagraph button:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+}
+
+.fullImgContainer {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fullImgContainer img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+/* --- Responsive --- */
+@media screen and (max-width: 1023px) {
+  .sendPhoto {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .titleContainer h1 {
+    font-size: 45px;
+  }
+  .sendPhotoParagraph {
+    font-size: 22px;
+  }
+}

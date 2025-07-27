@@ -1,0 +1,129 @@
+.sloganContainer {
+  position: relative;
+  width: 100%;
+  padding-top: 40px;
+  overflow: hidden;
+}
+
+.contentSlogan {
+  position: relative;
+  z-index: 3;
+}
+
+.pageContent {
+  position: relative;
+  margin: 100px auto 50px auto;
+  padding: 0 20px;
+  max-width: 900px;
+  text-align: center;
+}
+
+.pageContent h2 {
+  font-size: 78px;
+  text-transform: uppercase;
+  color: rgb(255, 81, 0);
+  letter-spacing: 2px;
+  text-shadow: 0.4px 0.5px 10px rgba(0, 0, 0, 0.2);
+  line-height: 1.1;
+  margin-bottom: 40px;
+}
+
+.textContent {
+  color: black;
+  font-size: 20px;
+  font-weight: 550;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.textContent h3 {
+  margin-top: 50px;
+  margin-bottom: 15px;
+  font-size: 38px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.textContent p {
+  margin-bottom: 20px;
+}
+
+.textContent ul,
+.textContent ol {
+  padding-left: 40px;
+  margin-bottom: 20px;
+}
+
+.textContent li {
+  margin-bottom: 15px;
+}
+
+.textContent a {
+  color: rgb(255, 81, 0);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.textContent a:hover {
+  text-decoration: underline;
+}
+
+.balloonBackground {
+  position: absolute;
+  top: 120px;
+  right: 0;
+  z-index: -1;
+  width: 80%;
+  max-width: 800px;
+}
+
+.cloud {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.mountain {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .pageContent {
+    margin-top: 100px;
+    max-width: 700px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 739px) {
+  .pageContent {
+    margin: 40px auto;
+    padding: 0 15px;
+  }
+  .pageContent h2 {
+    font-size: 44px;
+    letter-spacing: 4px;
+  }
+  .textContent h3 {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+  .textContent {
+    font-size: 16px;
+  }
+  .textContent ul,
+  .textContent ol {
+    padding-left: 25px;
+  }
+  .balloonBackground {
+    top: 65px;
+  }
+}

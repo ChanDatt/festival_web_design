@@ -1,0 +1,91 @@
+.artistCard {
+  backdrop-filter: blur(13px);
+  background: rgba(225, 225, 255, 0.25);
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  box-shadow: 1px 0.5px 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 90px;
+}
+
+.artistCard:last-child {
+  margin-bottom: 0;
+}
+.artistImage {
+  width: 450px;
+  height: 450px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.biography {
+  margin: 25px 0;
+  padding-left: 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+.biography h2 {
+  margin-bottom: 20px;
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+.biography p {
+  font-size: 22px;
+  line-height: 1.6;
+  letter-spacing: 1.25px;
+  flex-grow: 1;
+}
+
+.musicPlayer {
+  margin-top: 20px;
+}
+
+.musicPlayer audio {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+  outline: none;
+}
+
+.musicPlayer audio::-webkit-media-controls-enclosure {
+  background: rgba(225, 225, 255, 0.08);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+}
+
+.musicPlayer audio::-webkit-media-controls-enclosure:hover {
+  background: rgba(225, 225, 255, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 1023px) {
+  .artistCard {
+    flex-direction: column;
+  }
+  .artistImage {
+    width: 100%;
+    height: 350px;
+  }
+  .biography {
+    padding-left: 0;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 739px) {
+  .artistImage {
+    height: 300px;
+  }
+  .biography h2 {
+    font-size: 44px;
+  }
+  .biography p {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,47 @@
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 55px;
+  margin: 80px 120px;
+}
+
+.imageWrapper {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 20% 3%;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.imageWrapper:hover {
+  transform: scale(0.8) rotate(-15deg);
+  border-radius: 0px;
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.imageWrapper:hover img {
+  transform: scale(1.1);
+}
+
+/* Tablet */
+@media (max-width: 1023px) {
+  .imageGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+  .imageGrid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,54 @@
+.pageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 96px - 100px);
+  text-align: center;
+  padding: 40px;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+.contentWrapper {
+  max-width: 600px;
+}
+
+.errorCode {
+  font-size: 10rem;
+  font-weight: 900;
+  color: rgb(255, 81, 0);
+  line-height: 1;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.errorMessage {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.errorDescription {
+  font-size: 1.1rem;
+  margin-top: 20px;
+  color: #666;
+}
+
+.homeButton {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgb(255, 81, 0);
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(255, 81, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.homeButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 81, 0, 0.5);
+}

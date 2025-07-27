@@ -1,0 +1,73 @@
+.pageContainer {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(
+    rgb(9, 47, 0) 0%,
+    rgb(0, 199, 136) 50%,
+    rgba(0, 170, 255, 1) 100%
+  );
+}
+
+.backgroundWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 850px;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.backgroundWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mainContent {
+  position: relative;
+  z-index: 1;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.titlePlace {
+  padding-top: 175px;
+  margin-bottom: 50px;
+  font-size: 90px;
+  text-transform: uppercase;
+  letter-spacing: 30px;
+  color: rgb(241, 204, 16);
+  font-weight: 900;
+  text-shadow: 4px 5px 10px rgba(0, 0, 0, 0.5);
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* --- Responsive --- */
+@media screen and (max-width: 1023px) {
+  .cardGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .backgroundWrapper {
+    height: 1200px;
+  }
+  .titlePlace {
+    font-size: 60px;
+    letter-spacing: 15px;
+  }
+  .cardGrid {
+    grid-template-columns: 1fr;
+  }
+}

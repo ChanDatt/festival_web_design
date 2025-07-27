@@ -1,0 +1,56 @@
+.ticketCard {
+  text-align: center;
+}
+
+.ticketCard img {
+  backdrop-filter: blur(1px);
+  background: rgba(225, 225, 255, 0.1);
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.contentTicket {
+  backdrop-filter: blur(16px);
+  background: rgba(225, 225, 255, 0.2);
+  padding: 25px;
+  margin-top: -3px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.contentTicket h2 {
+  padding-bottom: 10px;
+  font-size: 35px;
+  letter-spacing: 1.7px;
+  font-weight: 300;
+  font-family: fantasy;
+  color: white;
+  text-shadow: 4px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contentTicket p {
+  padding-bottom: 20px;
+  font-weight: 100;
+  color: rgb(255, 255, 255);
+  text-shadow: 4px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.buyButton {
+  text-decoration: none;
+  color: white;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  padding: 10px 20px;
+  box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.2);
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.buyButton:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}

@@ -1,0 +1,54 @@
+.pageContainer {
+  background-image: linear-gradient(rgb(105, 182, 203), rgb(4, 95, 4));
+  width: 100%;
+  position: relative;
+  padding-top: 96px;
+}
+
+.backgroundWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 850px;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.backgroundWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mainContent {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 999;
+}
+
+.mainContent h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+  margin: 50px 0;
+  letter-spacing: 22px;
+  font-family: math;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-shadow: 0.6px 0.7px 9px rgba(16, 114, 146, 0.8);
+  color: white;
+  position: relative;
+}
+
+.lineupList {
+}
+
+/* --- Responsive --- */
+@media screen and (max-width: 739px) {
+  .mainContent h2 {
+    letter-spacing: 5px;
+    font-size: 45px;
+  }
+}

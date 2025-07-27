@@ -1,0 +1,69 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+
+.modalContainerDefault {
+  background-color: #fff;
+  width: 90%;
+  max-width: 700px;
+  position: relative;
+  animation: modalFadeIn ease 0.4s;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.modalContainerImage {
+  position: relative;
+  animation: modalFadeIn ease 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalCloseButton {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color: #333;
+  background: rgba(255, 255, 255, 0.7);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.modalCloseButton:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transform: scale(1.1);
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

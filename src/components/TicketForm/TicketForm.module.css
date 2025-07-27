@@ -1,0 +1,102 @@
+/* src/components/TicketForm/TicketForm.module.css - PHIÊN BẢN KHÔI PHỤC */
+
+/* --- Header --- */
+.modalHeader {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px 25px 0 0;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalHeader i {
+  font-size: 50px;
+  font-style: italic;
+  font-family: serif;
+  color: #fff;
+  backdrop-filter: blur(1px);
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.modalBody {
+  padding: 16px 30px;
+  color: #333;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.formGroup p,
+.formGroup label[for="quantity"],
+.formGroup label[for="email"] {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.formGroup input[type="radio"] {
+  margin-right: 5px;
+}
+
+.formGroup label {
+  display: inline-block;
+  margin-right: 20px;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.modalInput {
+  border: 1px solid #ccc;
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  margin-top: -5px;
+  background-color: #f8f8f8;
+}
+
+.submitButton {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  color: #fff;
+  width: 100%;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: opacity 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: bold;
+}
+
+.submitButton:hover {
+  opacity: 0.9;
+}
+
+.modalFooter {
+  padding: 16px 30px;
+  text-align: right;
+  font-size: 14px;
+}
+
+.modalFooter a {
+  color: #007bff;
+  text-decoration: none;
+}
+.modalFooter a:hover {
+  text-decoration: underline;
+}
