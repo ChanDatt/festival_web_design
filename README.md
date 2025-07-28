@@ -1,12 +1,58 @@
-# React + Vite
+# Festival Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Video Demo Website -
 
-Currently, two official plugins are available:
+## Website Screenshot 
+<table>
+  <tr>
+    <td><em>Home Page</em></td> 
+  </tr>
+  <tr>
+    <td><img src="./src/assets/images/HomePage.png"></td>
+  </tr>
+  <tr>
+    <td><img src="./src/assets/images/HomePage_2.png"></td>
+  </tr>
+  <tr>
+    <td><img src="./src/assets/images/HomePage_3.png"></td>
+  </tr>
+  <tr>
+    <td><img src="./src/assets/images/HomePage_4.png"></td>
+  </tr>
+ </table>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<table>
+  <tr>
+    <td><em>Place</em></td> 
+  </tr>
+  <tr>
+    <td><img src="./src/assets/images/PlacePage.png"></td>
+  </tr>
+ </table>
 
-## Expanding the ESLint configuration
+<table>
+  <tr>
+    <td><em>Lineup</em></td> 
+  </tr>
+  <tr>
+    <td><img src="./src/assets/images/LineupPage.png"></td>
+  </tr>
+ </table>
+ 
+ <table>
+  <tr>
+    <td><em>Gallery</em></td> 
+  </tr>
+  <tr>
+    <td><img src="./src/assets/images/GalleryPage.png"></td>
+  </tr>
+ </table>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+ <table>
+  <tr>
+    <td><em>Tickets</em></td> 
+  </tr>
+  <tr>
+    <td><img src="./src/assets/images/TicketPage.png"></td>
+  </tr>
+ </table>
