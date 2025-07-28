@@ -73,7 +73,7 @@ function LineupPage() {
       </div>
 
       <main className={styles.mainContent}>
-        <h2>Lineup 2024</h2>
+        <h2>Lineup 2026</h2>
         <div className={styles.lineupList}>
           {artistsData.map((artist) => (
             <ArtistCard key={artist.name} artist={artist} />
