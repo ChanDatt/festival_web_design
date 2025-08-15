@@ -43,5 +43,6 @@
   .imageGrid {
     grid-template-columns: 1fr;
     gap: 10px;
+    margin: 53px 65px;
   }
 }

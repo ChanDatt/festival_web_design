@@ -75,3 +75,11 @@
 .dots li.active {
   width: 30px;
 }
+
+@media screen and (max-width: 739px) {
+  .slider {
+    max-width: 96vw;
+    height: 400px;
+    border-radius: 85px;
+  }
+}

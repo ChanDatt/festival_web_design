@@ -1,9 +1,14 @@
+:root {
+  --text-color-hover: rgb(250, 123, 5);
+  --transition: all 0.5s ease;
+}
 .Header {
   height: 100px;
   position: absolute;
   width: 100%;
   z-index: 999;
 }
+
 .logoFest {
   height: 95px;
   margin-left: 67px;
@@ -35,15 +40,95 @@
 
 .nav li a:hover,
 .activeLink {
-  color: rgb(250, 123, 5);
+  color: var(--text-color-hover);
 }
 
-@media screen and (max-width: 1023px) {
-  .nav {
-    display: none;
+.nav_bar_btn {
+  width: 35px;
+  height: 35px;
+  font-size: 30px;
+  float: right;
+  line-height: 95px;
+  display: none;
+  cursor: pointer;
+}
+
+/* Overlay mờ */
+:global(.nav_overlay) {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 4;
+  display: none;
+  animation: fadeIn linear 0.2s;
+}
+
+:global(.nav_mobile) {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 320px;
+  max-width: 100%;
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 25px 0 0 25px;
+  z-index: 5;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: var(--transition), opacity linear 0.2s;
+}
+
+:global(#nav-mobile-input:checked ~ .nav_overlay) {
+  display: block;
+}
+
+:global(#nav-mobile-input:checked ~ .nav_mobile) {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+:global(#nav_list) {
+  margin-top: 24px;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  list-style-type: none;
+}
+
+:global(#nav_list li a) {
+  text-decoration: none;
+  color: black;
+  padding: 38px;
+  display: block;
+  font-weight: 550;
+  letter-spacing: 3px;
+}
+
+:global(#nav_list li a:hover) {
+  color: var(--text-color-hover);
+  transition: var(--transition);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  .mobileNavBtn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 1023px) {
+  .nav_bar_btn {
     display: block;
+    margin-right: 60px;
+  }
+  .nav a {
+    display: none;
   }
 }
 
@@ -53,8 +138,8 @@
     margin-left: 12px;
     margin-top: 18px;
   }
-  .mobileNavBtn {
-    margin-right: 0;
+  .nav_bar_btn {
+    margin-right: 0px;
   }
 }
 
@@ -64,13 +149,7 @@
     margin-left: 40px;
     margin-top: 13px;
   }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
+  .navBar {
+    display: none;
   }
 }

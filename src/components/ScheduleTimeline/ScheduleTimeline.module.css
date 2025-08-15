@@ -98,6 +98,9 @@
 
 /* Responsive */
 @media screen and (max-width: 768px) {
+  .schedule {
+    padding: 13px;
+  }
   .timeline::after {
     left: 31px;
   }
@@ -116,7 +119,7 @@
     left: -2.5px;
   }
   .schedule h2 {
-    font-size: 60px;
+    font-size: 50px;
     letter-spacing: 14px;
   }
 }

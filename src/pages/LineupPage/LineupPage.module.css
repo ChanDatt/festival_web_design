@@ -42,11 +42,11 @@
   position: relative;
 }
 
-.lineupList {
-}
-
 /* --- Responsive --- */
 @media screen and (max-width: 739px) {
+  .backgroundWrapper {
+    height: 1150px;
+  }
   .mainContent h2 {
     letter-spacing: 5px;
     font-size: 45px;
